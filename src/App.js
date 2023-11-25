@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import { Add } from "./add_anime/Add";
 import { Navbar } from "./Navbar";
 import { CardDetail } from "./add_anime/CardDetail";
