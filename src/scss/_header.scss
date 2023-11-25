@@ -1,0 +1,15 @@
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  height: 150px;
+}
+header h1 {
+  color: rebeccapurple;
+  font-size: 5rem;
+}
+header span{
+  color: white;
+  font-size: 4rem;
+}
