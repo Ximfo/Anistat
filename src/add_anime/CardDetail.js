@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import axios  from "axios";
+
 
 export const CardDetail = () => {
     const [anime, setAnime] = useState([]);
@@ -13,10 +14,42 @@ export const CardDetail = () => {
         );
         setAnime(data.data.data);
     };
-
+    console.log(anime)
     useEffect(() => {
         fetch();
     }, [id]);
+
+    const AddAni=async(all)=>{
+
+        const API_URL = 'http://localhost:3000';
+
+        const aniData = {
+            title: all.title,
+            year: all.aired.prop.from.year
+        };
+        console.log(aniData)
+
+        try {
+            const res = await fetch(`${API_URL}/anidb`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(aniData),
+            });console.log(res)
+            const data = await res.json();
+
+            if (!res.ok) {
+                console.log(data);
+                return;
+            }
+            console.log(data);
+        } catch (error){
+            console.log(error);
+        }
+    }
+
+
 
     return (
         <div className='des'>
@@ -26,7 +59,7 @@ export const CardDetail = () => {
                          <img src={all.images.jpg.image_url} alt='' />
                         <div className='cardDetail'>
                             <h1>{all.title}</h1>
-                            <button className='addbtn'>Add Anime</button>
+                            <button className='addbtn' onClick={()=>AddAni(all)}>Add Anime</button>
                             <span>Genre: {all.genres[0].name}</span>
                             <span>Type: {all.type}</span>
                             <span>Number of episodes: {all.episodes}</span>
