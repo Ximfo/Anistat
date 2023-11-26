@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios  from "axios";
+import {AddAni} from "./AddMechanics";
 
 
 export const CardDetail = () => {
@@ -8,7 +9,7 @@ export const CardDetail = () => {
 
     const { id } = useParams();
 
-    const fetch = async () => {
+    const fetchAnime = async () => {
         const data = await axios.get(
             `https://api.jikan.moe/v4/anime?q=${id}&limit=1`
         );
@@ -16,39 +17,8 @@ export const CardDetail = () => {
     };
     console.log(anime)
     useEffect(() => {
-        fetch();
+        fetchAnime();
     }, [id]);
-
-    const AddAni=async(all)=>{
-
-        const API_URL = 'http://localhost:3000';
-
-        const aniData = {
-            title: all.title,
-            year: all.aired.prop.from.year
-        };
-        console.log(aniData)
-
-        try {
-            const res = await fetch(`${API_URL}/anidb`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(aniData),
-            });console.log(res)
-            const data = await res.json();
-
-            if (!res.ok) {
-                console.log(data);
-                return;
-            }
-            console.log(data);
-        } catch (error){
-            console.log(error);
-        }
-    }
-
 
 
     return (

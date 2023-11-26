@@ -10,7 +10,7 @@ export const Animes = () => {
 
     const { id } = useParams();
 
-    const fetch = async () => {
+    const fetchAnimes = async () => {
         const data = await axios.get(
             `https://api.jikan.moe/v4/anime?q=${animetitle}`
         );
@@ -18,14 +18,14 @@ export const Animes = () => {
     };
     console.log(anime)
     useEffect(() => {
-        fetch();
+        fetchAnimes();
     }, [id]);
 
     return (
         <>
             <input type={"text"} value={animetitle}
                    onChange={(e)=>setanimetitle(e.target.value)}/>
-            <button onClick={fetch}>find</button>
+            <button onClick={fetchAnimes}>find</button>
             <div className='cards'>
                 {anime?.map(animes => (
                     <Card all={animes} key={animes.mal_id} />
