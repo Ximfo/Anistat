@@ -1,0 +1,32 @@
+table {
+  font-size: 1.3rem;
+  border-collapse: collapse;
+  margin: 10px auto;
+  text-align: center;
+    thead {
+      background: black;
+      color: white;
+      th {
+        border-right: 1px solid white;
+        margin: 0;
+        padding: 5px;
+        height: 5vh;
+      }
+      th:last-of-type{
+        border-right: none
+      }
+    }
+    td{
+      margin: 0;
+      padding: 0;
+      li{
+        list-style-type: none;
+        border: 1px solid black;
+        padding: 5px 5px;
+      }
+      .aniTitle{
+        width: auto;
+        text-align: left;
+      }
+    }
+}
