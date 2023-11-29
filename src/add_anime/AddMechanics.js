@@ -7,7 +7,13 @@ export const AddAni=async(all)=>{
     const aniData = {
         mal_id: all.mal_id,
         title: all.title,
-        year: all.aired.prop.from.year
+        genre: all.genres[0].name,
+        type: all.type,
+        episodes: all.episodes,
+        duration: all.duration,
+        studio: all.studios[0].name,
+        year: all.aired.prop.from.year,
+        image: all.images.jpg.image_url,
     };
     console.log(aniData)
 
@@ -26,6 +32,7 @@ export const AddAni=async(all)=>{
             alert("This anime is alredy added in database.");
             return;
         }
+
         const res = await fetch(`${API_URL}`, {
             method: 'POST',
             headers: {
@@ -33,6 +40,7 @@ export const AddAni=async(all)=>{
             },
             body: JSON.stringify(aniData),
         });
+
         const data = await res.json();
 
         if (!res.ok) {
@@ -43,4 +51,5 @@ export const AddAni=async(all)=>{
     } catch (error){
         console.log(error);
     }
+    alert("Anime added to database");
 }
