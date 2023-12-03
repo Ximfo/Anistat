@@ -17,6 +17,7 @@ export const List =()=> {
             <thead>
             <tr>
                 <th>ID</th>
+                <th className={'li_img'}>IMAGE</th>
                 <th className={'aniTitle'}>TITLE</th>
                 <th>GENRE</th>
                 <th>EPISODES</th>
@@ -29,7 +30,10 @@ export const List =()=> {
             <tbody>
             <tr>
                 <td>{
-                    Animedatabase.map((element, index) => {return (<li key={element.mal_id} >{index}</li>)})
+                    Animedatabase.map((element, index) => {return (<li key={element.mal_id} >{index+1}</li>)})
+                }</td>
+                <td>{
+                    Animedatabase.map(element=>{return (<li className={'li_img'} key={element.mal_id} ><img src={element.image} alt={''}/></li>)})
                 }</td>
                 <td>{
                     Animedatabase.map(element=>{return (<li key={element.mal_id} className={'aniTitle'}>{element.title}</li>)})

@@ -1,0 +1,11 @@
+.stats{
+  display: flex;
+  div{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    span{
+    font-size: 2em;
+    }
+  }
+}

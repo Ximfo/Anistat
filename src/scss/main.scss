@@ -1,5 +1,10 @@
+*{
+  box-sizing: border-box;
+}
+
 @import "app";
 @import "header";
 @import "navbar";
 @import "CardDetail";
 @import "list";
+@import "stats";
