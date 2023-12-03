@@ -95,6 +95,30 @@
       "year": 1998,
       "image": "https://cdn.myanimelist.net/images/anime/7/20310.jpg",
       "id": 8
+    },
+    {
+      "mal_id": 2013,
+      "title": "Taiho Shichau zo The Movie",
+      "genre": "Action",
+      "type": "Movie",
+      "episodes": 1,
+      "duration": "1 hr 29 min",
+      "studio": "Studio Deen",
+      "year": 1999,
+      "image": "https://cdn.myanimelist.net/images/anime/1921/92313.jpg",
+      "id": 9
+    },
+    {
+      "mal_id": 17437,
+      "title": "The iDOLM@STER Movie: Kagayaki no Mukougawa e!",
+      "genre": "Comedy",
+      "type": "Movie",
+      "episodes": 1,
+      "duration": "2 hr 1 min",
+      "studio": "A-1 Pictures",
+      "year": 2014,
+      "image": "https://cdn.myanimelist.net/images/anime/2/71801.jpg",
+      "id": 10
     }
   ]
 }
