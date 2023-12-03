@@ -1,11 +1,26 @@
-.stats{
+.main_stats{
   display: flex;
-  div{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    span{
-    font-size: 2em;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  .statistics{
+  display: flex;
+    .stats{
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+      span{
+      font-size: 2em;
+      }
     }
+  }
+  .Pie{
+    height: 400px;
+    text-align: center;
+  }
+  .Bars{
+    height: 400px;
+    width: 40vw;
   }
 }

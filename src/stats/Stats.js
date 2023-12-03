@@ -1,9 +1,13 @@
 import React from "react";
+import {Round} from "./animepie";
+import {Genres} from "./genres";
+import {Years} from "./years";
+import {Studios} from "./studios";
 
 
 const API_URL = 'http://localhost:3000/anidb';
 
-const fetchdb = await fetch(`${API_URL}`)
+export const fetchdb = await fetch(`${API_URL}`)
     .then(response=>response.json())
     .then(database => {return database})
     .catch(error=>{console.log(error)});
@@ -36,8 +40,10 @@ const TVshows=[...TVHours, ...TVMinutes];
 
 console.log(TVshows);
 
-const moviesQty=movies.length;
-const TVshowsQty=TVshows.length;
+export const moviesQty=movies.length;
+export const TVshowsQty=TVshows.length;
+
+
 
 const movMins=movies.reduce((acc,ne)=>acc+ne);
 const TVMins=TVshows.reduce((acc,ne)=>acc+ne);
@@ -57,33 +63,39 @@ function divideMins(time) {
     return {years, days, hours, mins};
 }
 
-
 export const Stats=()=>{
     return(
-        <div className="stats">
-            <div>
-                <h1>Anime watched:{AnimeQty}</h1>
-                <span>Time spend on all:</span>
-                <span>{divideMins(fullMins).years} Years</span>
-                <span>{divideMins(fullMins).days} Days</span>
-                <span>{divideMins(fullMins).hours} Hours</span>
-                <span>{divideMins(fullMins).mins} Minutes</span>
-            </div>
-            <div>
-                <h1>Movies watched:{moviesQty}</h1>
-                <span>Time spend on movies:</span>
-                <span>{divideMins(movMins).years} Years</span>
-                <span>{divideMins(movMins).days} Days</span>
-                <span>{divideMins(movMins).hours} Hours</span>
-                <span>{divideMins(movMins).mins} Minutes</span>
-            </div>
-            <div>
-                <h1>Serials watched:{TVshowsQty}</h1>
-                <span>Time spend on serials:</span>
-                <span>{divideMins(TVMins).years} Years</span>
-                <span>{divideMins(TVMins).days} Days</span>
-                <span>{divideMins(TVMins).hours} Hours</span>
-                <span>{divideMins(TVMins).mins} Minutes</span>
-            </div>
+        <div className="main_stats">
+            <div className="statistics">
+                <div className="stats">
+                    <h1>Anime watched:{AnimeQty}</h1>
+                    <span>Time spend on all:</span>
+                    <span>{divideMins(fullMins).years} Years</span>
+                    <span>{divideMins(fullMins).days} Days</span>
+                    <span>{divideMins(fullMins).hours} Hours</span>
+                    <span>{divideMins(fullMins).mins} Minutes</span>
+                </div>
+                <div className="stats">
+                    <h1>Movies watched:{moviesQty}</h1>
+                    <span>Time spend on movies:</span>
+                    <span>{divideMins(movMins).years} Years</span>
+                    <span>{divideMins(movMins).days} Days</span>
+                    <span>{divideMins(movMins).hours} Hours</span>
+                    <span>{divideMins(movMins).mins} Minutes</span>
+                </div>
+                <div className="stats">
+                    <h1>Serials watched:{TVshowsQty}</h1>
+                    <span>Time spend on serials:</span>
+                    <span>{divideMins(TVMins).years} Years</span>
+                    <span>{divideMins(TVMins).days} Days</span>
+                    <span>{divideMins(TVMins).hours} Hours</span>
+                    <span>{divideMins(TVMins).mins} Minutes</span>
+                </div>
+             </div>
+
+            <div className="Pie" ><Round/></div>
+            <div className="Bars" ><Genres/></div>
+            <div className="Bars" ><Years/></div>
+            <div className="Bars" ><Studios/></div>
         </div>
     )}

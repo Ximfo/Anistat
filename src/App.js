@@ -11,12 +11,11 @@ function App() {
         <div className={'components'}>
           <Navbar />
           <Routes>
+              <Route path='/' element={<Add />} />
+              <Route path='/add' element={<Add />} />
+                <Route path='/add/:id' element={<CardDetail />} />
               <Route path='/list' element={<List />} />
               <Route path='/stats' element={<Stats />} />
-            <Route path='/:id' element={<Add />} />
-            <Route path='/' element={<Add />} />
-            <Route path='/add/:id' element={<CardDetail />} />
-
           </Routes>
         </div>
       </BrowserRouter>
