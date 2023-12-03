@@ -119,6 +119,18 @@
       "year": 2014,
       "image": "https://cdn.myanimelist.net/images/anime/2/71801.jpg",
       "id": 10
+    },
+    {
+      "mal_id": 50515,
+      "title": "Artiswitch Picture Drama",
+      "genre": "Slice of Life",
+      "type": "ONA",
+      "episodes": 5,
+      "duration": "5 min per ep",
+      "studio": "Sunrise",
+      "year": 2021,
+      "image": "https://cdn.myanimelist.net/images/anime/1457/119884.jpg",
+      "id": 11
     }
   ]
 }
