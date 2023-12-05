@@ -1,5 +1,5 @@
 import React from 'react';
-import {fetchdb} from "./Stats";
+import {fetchAniDB} from "./Stats";
 import { Bar } from 'react-chartjs-2';
 import {calcBars} from "./calcBars";
 
@@ -44,7 +44,7 @@ export function Studios() {
         },
     };
 
-    const studiofilter=fetchdb.map(e=>e.studio);
+    const studiofilter=fetchAniDB.map(e=>e.studio);
 
     const labels = calcBars(studiofilter).labels;
 

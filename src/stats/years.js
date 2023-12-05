@@ -1,6 +1,6 @@
 import React from 'react';
-import {fetchdb} from "./Stats";
 import { Bar } from 'react-chartjs-2';
+import {fetchAniDB} from "./Stats";
 import {calcBars} from "./calcBars";
 
 import {
@@ -13,6 +13,7 @@ import {
     Legend,
     Filler
 } from 'chart.js';
+
 
 ChartJS.register(
     CategoryScale,
@@ -44,7 +45,7 @@ export function Years() {
         },
     };
 
-    const yearsfilter=fetchdb.map(e=>e.year);
+    const yearsfilter=fetchAniDB.map(e=>e.year);
     console.log(yearsfilter)
 
     const labels = calcBars(yearsfilter).labels;

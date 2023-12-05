@@ -1,6 +1,20 @@
 {
   "anidb": [
     {
+      "user": "andy",
+      "mal_id": 195,
+      "title": "Onegai☆Teacher",
+      "genre": "Drama",
+      "type": "TV",
+      "episodes": 12,
+      "duration": "22 min per ep",
+      "studio": "Daume",
+      "year": 2002,
+      "image": "https://cdn.myanimelist.net/images/anime/1371/138517.jpg",
+      "id": 1
+    },
+    {
+      "user": "andy",
       "mal_id": 30,
       "title": "Shinseiki Evangelion",
       "genre": "Action",
@@ -10,127 +24,7 @@
       "studio": "Gainax",
       "year": 1995,
       "image": "https://cdn.myanimelist.net/images/anime/1314/108941.jpg",
-      "id": 1
-    },
-    {
-      "mal_id": 14813,
-      "title": "Yahari Ore no Seishun Love Comedy wa Machigatteiru.",
-      "genre": "Comedy",
-      "type": "TV",
-      "episodes": 13,
-      "duration": "24 min per ep",
-      "studio": "Brain's Base",
-      "year": 2013,
-      "image": "https://cdn.myanimelist.net/images/anime/1786/120117.jpg",
       "id": 2
-    },
-    {
-      "mal_id": 7593,
-      "title": "Kiss x Sis (TV)",
-      "genre": "Comedy",
-      "type": "TV",
-      "episodes": 12,
-      "duration": "24 min per ep",
-      "studio": "feel.",
-      "year": 2010,
-      "image": "https://cdn.myanimelist.net/images/anime/1660/121553.jpg",
-      "id": 3
-    },
-    {
-      "mal_id": 18,
-      "title": "Initial D Fourth Stage",
-      "genre": "Action",
-      "type": "TV",
-      "episodes": 24,
-      "duration": "27 min per ep",
-      "studio": "A.C.G.T.",
-      "year": 2004,
-      "image": "https://cdn.myanimelist.net/images/anime/9/10521.jpg",
-      "id": 4
-    },
-    {
-      "mal_id": 24,
-      "title": "School Rumble",
-      "genre": "Comedy",
-      "type": "TV",
-      "episodes": 26,
-      "duration": "23 min per ep",
-      "studio": "Studio Comet",
-      "year": 2004,
-      "image": "https://cdn.myanimelist.net/images/anime/4/75488.jpg",
-      "id": 5
-    },
-    {
-      "mal_id": 50265,
-      "title": "Spy x Family",
-      "genre": "Action",
-      "type": "TV",
-      "episodes": 12,
-      "duration": "24 min per ep",
-      "studio": "Wit Studio",
-      "year": 2022,
-      "image": "https://cdn.myanimelist.net/images/anime/1441/122795.jpg",
-      "id": 6
-    },
-    {
-      "mal_id": 1,
-      "title": "Cowboy Bebop",
-      "genre": "Action",
-      "type": "TV",
-      "episodes": 26,
-      "duration": "24 min per ep",
-      "studio": "Sunrise",
-      "year": 1998,
-      "image": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
-      "id": 7
-    },
-    {
-      "mal_id": 6,
-      "title": "Trigun",
-      "genre": "Action",
-      "type": "TV",
-      "episodes": 26,
-      "duration": "24 min per ep",
-      "studio": "Madhouse",
-      "year": 1998,
-      "image": "https://cdn.myanimelist.net/images/anime/7/20310.jpg",
-      "id": 8
-    },
-    {
-      "mal_id": 2013,
-      "title": "Taiho Shichau zo The Movie",
-      "genre": "Action",
-      "type": "Movie",
-      "episodes": 1,
-      "duration": "1 hr 29 min",
-      "studio": "Studio Deen",
-      "year": 1999,
-      "image": "https://cdn.myanimelist.net/images/anime/1921/92313.jpg",
-      "id": 9
-    },
-    {
-      "mal_id": 17437,
-      "title": "The iDOLM@STER Movie: Kagayaki no Mukougawa e!",
-      "genre": "Comedy",
-      "type": "Movie",
-      "episodes": 1,
-      "duration": "2 hr 1 min",
-      "studio": "A-1 Pictures",
-      "year": 2014,
-      "image": "https://cdn.myanimelist.net/images/anime/2/71801.jpg",
-      "id": 10
-    },
-    {
-      "mal_id": 50515,
-      "title": "Artiswitch Picture Drama",
-      "genre": "Slice of Life",
-      "type": "ONA",
-      "episodes": 5,
-      "duration": "5 min per ep",
-      "studio": "Sunrise",
-      "year": 2021,
-      "image": "https://cdn.myanimelist.net/images/anime/1457/119884.jpg",
-      "id": 11
     }
   ]
 }
