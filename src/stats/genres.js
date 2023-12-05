@@ -1,6 +1,6 @@
 import React from 'react';
-import {fetchdb} from "./Stats";
 import { Bar } from 'react-chartjs-2';
+import {fetchAniDB} from "./Stats";
 import {calcBars} from "./calcBars";
 
 import {
@@ -13,6 +13,7 @@ import {
     Legend,
     Filler
 } from 'chart.js';
+
 
 ChartJS.register(
     CategoryScale,
@@ -44,7 +45,7 @@ const options = {
     },
 };
 
-const genresfilter=fetchdb.map(e=>e.genre);
+const genresfilter=fetchAniDB.map(e=>e.genre);
 
 const labels = calcBars(genresfilter).labels;
 

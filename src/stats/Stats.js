@@ -1,22 +1,28 @@
 import React from "react";
+import {getUser} from "../welcome/welcome";
 import {Round} from "./animepie";
 import {Genres} from "./genres";
 import {Years} from "./years";
 import {Studios} from "./studios";
 
 
-const API_URL = 'http://localhost:3000/anidb';
+export const API_URL = 'http://localhost:3001/anidb';
 
-export const fetchdb = await fetch(`${API_URL}`)
+export const fetchAniDB = await fetch(`${API_URL}`)
     .then(response=>response.json())
     .then(database => {return database})
     .catch(error=>{console.log(error)});
 
-console.log(fetchdb);
+console.log(fetchAniDB);
 
-const AnimeQty=fetchdb.length;
+const userAnime=fetchAniDB.filter(e=>e.user===getUser())
+// tak samo jak w List.js
 
-const moviesfilter=fetchdb.filter(e=> e.type==="Movie");
+console.log(userAnime);
+
+const AnimeQty=userAnime.length;
+
+const moviesfilter=userAnime.filter(e=> e.type==="Movie");
 
 const moviesHours=moviesfilter.filter(e=>e.duration.slice(2,3)==="h")
             .map(e=>(e.episodes*e.duration.slice(0,1)*60 + parseFloat(e.duration.slice(5,7))));
@@ -24,11 +30,11 @@ const moviesHours=moviesfilter.filter(e=>e.duration.slice(2,3)==="h")
 const moviesMins=moviesfilter.filter(e=>e.duration.slice(3,4)==="m")
             .map(e=>(e.episodes*e.duration.slice(0,2)))
 
-const movies=[...moviesHours ,...moviesMins];
+const movies=moviesHours.concat(moviesMins);
 
 console.log(movies);
 
-const TVfilter=fetchdb.filter(e=>e.type==='TV')
+const TVfilter=userAnime.filter(e=>e.type==='TV')
 
 const TVHours=TVfilter.filter(e=>e.duration.slice(2,3)==="h")
     .map(e=>(e.episodes*e.duration.slice(0,1)*60 + parseFloat(e.duration.slice(5,7))));
@@ -36,7 +42,7 @@ const TVHours=TVfilter.filter(e=>e.duration.slice(2,3)==="h")
 const TVMinutes=TVfilter.filter(e=>e.duration.slice(3,4)==="m")
     .map(e=>(e.episodes*e.duration.slice(0,2)))
 
-const TVshows=[...TVHours, ...TVMinutes];
+const TVshows=TVHours.concat(TVMinutes);
 
 console.log(TVshows);
 
@@ -45,8 +51,8 @@ export const TVshowsQty=TVshows.length;
 
 
 
-const movMins=movies.reduce((acc,ne)=>acc+ne);
-const TVMins=TVshows.reduce((acc,ne)=>acc+ne);
+const movMins=movies.reduce((acc,ne)=>acc+ne,0);
+const TVMins=TVshows.reduce((acc,ne)=>acc+ne,0);
 
 const fullMins=movMins+TVMins;
 

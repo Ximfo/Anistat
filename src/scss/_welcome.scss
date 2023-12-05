@@ -1,0 +1,22 @@
+
+
+
+.home{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  span{
+    font-size: 4em;
+  }
+  .accountBtn{
+    margin-top: 20px;
+    width: 30vw;
+    height: 5vh;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+}

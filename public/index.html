@@ -27,9 +27,49 @@
     <title>Anistat</title>
     <link rel="stylesheet" href="../src/scss/main.scss" >
   </head>
+
   <body>
-    <header><h1>abc</h1></header>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header>
+      <h1>abc</h1>
+      <span class="showuser"></span>
+    </header>
+
+    <section class="home" id="hallo">
+      <span>Welcome to AniStat</span>
+      <button class="accountBtn" id="signinbtn">SIGN IN</button>
+      <button class="accountBtn" id="signupbtn">SIGN UP</button>
+    </section>
+
+
+    <section class="home" id="sign_in">
+      <form>
+        <label>User name
+          <input type="text" id="username" />
+        </label>
+        <label>Password
+          <input type="password" id="pass" />
+        </label>
+      </form>
+      <button class="accountBtn" id="loginBtn">LOGIN</button>
+    </section>
+
+
+    <section class="home" id="sign_up">
+      <form>
+        <label>User name
+          <input type="text" id="newuser" />
+        </label>
+        <label>Password
+          <input type="password" id="newpass" />
+        </label>
+        <label>Repeat Password
+          <input type="password" id="rptpass" />
+        </label>
+      </form>
+      <button class="accountBtn" id="accountBtn">CREATE ACCOUNT</button>
+    </section>
+
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

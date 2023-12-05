@@ -1,13 +1,19 @@
 import React from "react";
+import {getUser} from "../welcome/welcome";
 
-const API_URL = 'http://localhost:3000/anidb';
+    const API_URL = 'http://localhost:3001/anidb';
 
-const fetchdatabase = await fetch(`${API_URL}`)
-    .then(response=>response.json())
-    .then(database => {return database})
-    .catch(error=>{console.log(error)});
+    const fetchAniDB = await fetch(`${API_URL}`)
+        .then(response => response.json())
+        .then(database => {return database})
+        .catch(error => {console.log(error)});
+    console.log(fetchAniDB,getUser())
 
-const Animedatabase=fetchdatabase.sort((a,b)=>
+    const userAnime=fetchAniDB.filter(e=>e.user===getUser())
+    // tutaj kod się wysypuje bo getUser to pusty string
+    // co zrobić, aby wczytywanie bazy  anidb.json rozpoczynało się po wcisnięciu przycisku Login
+
+const Animedatabase=userAnime.sort((a,b)=>
     a.title.toUpperCase().localeCompare(b.title.toUpperCase()))
 
 console.log(Animedatabase)

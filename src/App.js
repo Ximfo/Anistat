@@ -4,6 +4,8 @@ import { Navbar } from "./Navbar";
 import { CardDetail } from "./add_anime/CardDetail";
 import { List } from "./list/List";
 import { Stats } from "./stats/Stats";
+import { Logged } from "./welcome/welcome";
+
 
 function App() {
   return (
@@ -11,7 +13,7 @@ function App() {
         <div className={'components'}>
           <Navbar />
           <Routes>
-              <Route path='/' element={<Add />} />
+              <Route path='/' element={<Logged />} />
               <Route path='/add' element={<Add />} />
                 <Route path='/add/:id' element={<CardDetail />} />
               <Route path='/list' element={<List />} />

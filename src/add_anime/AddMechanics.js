@@ -1,10 +1,11 @@
 
+import {getUser} from "../welcome/welcome";
 
 export const AddAni=async(all)=>{
-
-    const API_URL = 'http://localhost:3000/anidb';
+    const API_URL = 'http://localhost:3001/anidb'
 
     const aniData = {
+        user: getUser(),
         mal_id: all.mal_id,
         title: all.title,
         genre: all.genres[0].name,
