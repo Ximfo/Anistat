@@ -3,7 +3,7 @@ import { Animes } from "./Animes";
 
 export const Add = () => {
     return (
-        <div>
+        <div className={"finder"}>
             <Animes />
         </div>
     );

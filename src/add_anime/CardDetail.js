@@ -29,13 +29,15 @@ export const CardDetail = () => {
                          <img src={all.images.jpg.image_url} alt='' />
                         <div className='cardDetail'>
                             <h1>{all.title}</h1>
-                            <button className='addbtn' onClick={()=>AddAni(all)}>Add Anime</button>
-                            <span>Genre: {all.genres[0].name}</span>
-                            <span>Type: {all.type}</span>
-                            <span>Number of episodes: {all.episodes}</span>
-                            <span>Duration of episode: {all.duration}</span>
-                            <span>Studio: {all.studios[0].name}</span>
-                            <span>Year: {all.aired.prop.from.year}</span>
+                            <button className='addbtn' onClick={()=>AddAni(all)}>ADD ANIME</button>
+                            <div className={"animeInfo"}>
+                                <span>Genre: {all.genres[0].name}</span>
+                                <span>Type: {all.type}</span>
+                                <span>Episodes: {all.episodes}</span>
+                                <span>Duration: {all.duration}</span>
+                                <span>Studio: {all.studios[0].name}</span>
+                                <span>Year: {all.aired.prop.from.year}</span>
+                            </div>
                         </div>
                     </div>
                     <p>{all.synopsis}</p>

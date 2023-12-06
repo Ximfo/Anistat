@@ -1,26 +1,85 @@
 .main_stats{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   margin: 0 auto;
+  width: 100%;
+  background: $color_primary;
+  overflow-y: auto;
   .statistics{
-  display: flex;
+    display: flex;
+    justify-content: space-around;
+    width: 60vw;
+    margin-bottom: 30px;
     .stats{
       display: flex;
       flex-direction: column;
-      margin: 10px;
+      align-items: center;
+      justify-content: center;
+      .animestat,.moviestat,.TVstat{
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        font-family: $font_basic;
+        color:$color_font;
+        padding: 20px 50px;
+        border: 3px solid;
+        margin: 5px;
+      }
+      .animestat{
+        border-color: gold;
+        h1{
+          color:gold;
+        }
+        span{
+          color: goldenrod;
+        }
+      }
+      .moviestat{
+        border-color: red;
+        h1{
+          color: red;
+        }
+        span{
+          color: lightcoral;
+        }
+      }
+      .TVstat {
+        border-color: royalblue;
+        h1 {
+          color: royalblue;
+        }
+
+        span {
+          color: lightskyblue;
+        }
+      }
+      h1{
+        margin:0;
+      }
       span{
-      font-size: 2em;
+        font-size: 1.1em;
       }
     }
+
   }
   .Pie{
-    height: 400px;
-    text-align: center;
+    height: 80vh;
+    margin:10px 20px auto;
   }
   .Bars{
-    height: 400px;
-    width: 40vw;
+    height: 80vh;
+    width: 65vw;
+    margin: 20px auto;
+    background: lightgray;
+  }
+  .genres{
+    border: 5px solid $color_card;
+  }
+  .years{
+    border: 5px solid $color_btn;
+  }
+  .studios{
+    border: 5px solid mediumslateblue;
   }
 }

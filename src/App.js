@@ -4,22 +4,22 @@ import { Navbar } from "./Navbar";
 import { CardDetail } from "./add_anime/CardDetail";
 import { List } from "./list/List";
 import { Stats } from "./stats/Stats";
+import {Welcome} from "./welcome/hello";
 
 function App() {
   return (
+    <div className={"components"}>
       <BrowserRouter>
-        <div className={'components'}>
           <Navbar />
           <Routes>
-              <Route path='/' element={<Add />} />
+              <Route path='/' element={<Welcome />} />
               <Route path='/add' element={<Add />} />
                 <Route path='/add/:id' element={<CardDetail />} />
               <Route path='/list' element={<List />} />
               <Route path='/stats' element={<Stats />} />
           </Routes>
-        </div>
       </BrowserRouter>
-
+    </div>
   );
 }
 

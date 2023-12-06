@@ -1,6 +1,6 @@
 import React from "react";
 
-const API_URL = 'http://localhost:3000/anidb';
+const API_URL = 'http://localhost:3001/anidb';
 
 const fetchdatabase = await fetch(`${API_URL}`)
     .then(response=>response.json())
@@ -13,6 +13,7 @@ const Animedatabase=fetchdatabase.sort((a,b)=>
 console.log(Animedatabase)
 export const List =()=> {
     return(
+        <div className={'tableContent'}>
         <table>
             <thead>
             <tr>
@@ -59,5 +60,6 @@ export const List =()=> {
             </tr>
             </tbody>
         </table>
+        </div>
     )
 }

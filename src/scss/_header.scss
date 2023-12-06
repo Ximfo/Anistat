@@ -2,14 +2,29 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: black;
-  height: 150px;
+  background: $color_primary;
+  border-bottom:  5px solid $color_border;
+  height: 14vh;
+  #header_img{
+    background-image: url("../welcome/images/headerimg.png");
+    height: 14vh;
+    width: 150px;
+    background-size: cover;
+    margin-right: -20px;
+  }
 }
-header h1 {
-  color: rebeccapurple;
-  font-size: 5rem;
+.ani{
+  font-family: $font_basic;
+  color: $color_border;
+  font-size: 5em;
+  letter-spacing: 6px;
+  transform: skew(-25deg, 0deg);
 }
-header span{
-  color: white;
-  font-size: 4rem;
+.stat{
+  font-family: $font_basic;
+  color: $color_card;
+  font-size: 5em;
+  font-weight: bold;
+  letter-spacing: 6px;
+  transform: skew(25deg, 0deg);
 }

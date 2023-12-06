@@ -131,6 +131,18 @@
       "year": 2021,
       "image": "https://cdn.myanimelist.net/images/anime/1457/119884.jpg",
       "id": 11
+    },
+    {
+      "mal_id": 1361,
+      "title": "Final Fantasy: The Spirits Within",
+      "genre": "Sci-Fi",
+      "type": "Movie",
+      "episodes": 1,
+      "duration": "1 hr 45 min",
+      "studio": "Square Pictures",
+      "year": 2001,
+      "image": "https://cdn.myanimelist.net/images/anime/9/51625.jpg",
+      "id": 12
     }
   ]
 }
