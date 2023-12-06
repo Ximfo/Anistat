@@ -10,21 +10,21 @@ const data={
     labels:['Serials', 'Movies'],
     datasets:[
         {
-            label: `Serials: ${(TVshowsQty/(TVshowsQty+moviesQty))*100}% | Movies: ${(moviesQty/(TVshowsQty+moviesQty))*100}%`,
+            label: `Serials: ${Math.round(TVshowsQty/(TVshowsQty+moviesQty)*100)}% | Movies: ${Math.round(moviesQty/(TVshowsQty+moviesQty)*100)}%`,
             data: [TVshowsQty,moviesQty],
             backgroundColor:[
-                'rgba(0, 0, 0, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
+                'royalblue',
+                'red',
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
+                'lightskyblue',
+                'lightcoral',
             ],
-            borderWidth:1,
+            borderWidth:3,
         }
     ]
 }
     return(
-        <Pie data={data}/>
+        <Pie height={1000} width={1000} data={data}/>
     )
 }

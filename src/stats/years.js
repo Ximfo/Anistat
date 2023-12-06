@@ -56,12 +56,12 @@ export function Years() {
                 label: 'Years',
                 data: calcBars(yearsfilter).QtyResult.map(e=>e.length),
                 backgroundColor: 'black',
-                borderColor: 'white',
-                barPercentage: 0.5,
-                //barThickness: 20,
+                borderColor: 'orange',
+                //barPercentage: 0.5,
+                barThickness: 20,
                 //maxBarThickness: 150,
-                minBarLength: 2,
-                borderWidth:2
+                //minBarLength: 2,
+                borderWidth:4,
             },
         ],
     };

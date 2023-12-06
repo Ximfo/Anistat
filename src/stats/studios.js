@@ -55,12 +55,12 @@ export function Studios() {
                 label: 'Studio',
                 data: calcBars(studiofilter).QtyResult.map(e=>e.length),
                 backgroundColor: 'black',
-                borderColor: 'white',
-                barPercentage: 0.5,
-                //barThickness: 20,
+                borderColor: 'mediumslateblue',
+                //barPercentage: 0.5,
+                barThickness: 20,
                 //maxBarThickness: 150,
                 minBarLength: 2,
-                borderWidth:2
+                borderWidth:4,
             },
         ],
     };

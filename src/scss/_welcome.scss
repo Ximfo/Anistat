@@ -1,0 +1,41 @@
+.hello{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: black;
+  width: 100%;
+  .hi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-left:50px;
+    h1,h2{
+      font-family: $font_basic;
+      font-size: 7em;
+      letter-spacing: 15px;
+      margin:20px;
+    }
+    h1{
+      color:$color_btn;
+    }
+    h2{
+      color: indianred;
+    }
+    .logo{
+      display: flex;
+      margin:20px;
+      gap: 20px;
+      h3{
+        margin: 0;
+      }
+    }
+  }
+}
+#image{
+  width: 700px;
+  height:100%;
+  background-image: url("../welcome/images/welcomeimg1.png");
+  background-size: cover;
+}
+

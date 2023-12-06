@@ -2,7 +2,7 @@
 
 export const AddAni=async(all)=>{
 
-    const API_URL = 'http://localhost:3000/anidb';
+    const API_URL = 'http://localhost:3001/anidb';
 
     const aniData = {
         mal_id: all.mal_id,

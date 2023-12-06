@@ -1,0 +1,41 @@
+.finder{
+  width: 100%;
+  background: $color_primary;
+  .findtype {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input {
+      width: 315px;
+      padding: 10px 5px;
+      margin-top: 5px;
+      border: 2px solid $color_border;
+      background: black;
+      font-family: $font_basic;
+      color: white;
+      font-size: 1.2em;
+      text-align: center;
+      &:hover {
+        border: 2px dashed $color_btn;
+      }
+      &:focus {
+        outline: none;
+        border: 2px solid $color_btn;
+      }
+    }
+    button{
+      margin: 5px 0;
+      padding: 10px 115px;
+      font-family: $font_basic;
+      font-size: 1.2em;
+      color: $color_btn;
+      border: 2px solid $color_btn;
+      background: $color_primary;
+      &:hover{
+        cursor: pointer;
+      }
+    }
+  }
+
+}

@@ -55,12 +55,12 @@ const data = {
             label: 'Genres',
             data: calcBars(genresfilter).QtyResult.map(e=>e.length),
             backgroundColor: 'black',
-            borderColor: 'white',
-            barPercentage: 0.5,
-            //barThickness: 20,
+            borderColor: 'crimson',
+            //barPercentage: 0.2,
+            barThickness: 20,
             //maxBarThickness: 150,
-            minBarLength: 2,
-            borderWidth:2
+            //maxBarLength: 8,
+            borderWidth:4
         },
     ],
 };

@@ -2,36 +2,18 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-size: 62.5%;
-  background: #888888;
 }
 
 .components{
   display: flex;
+  height: 82vh;
+  border-right: 5px solid $color_border;
 }
 
-.cards {
-  width: 1780px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 180px);
-  gap: 1rem;
-  margin: 0 auto;
-  justify-content: center;
-  .card h1 {
-    font-size: 1.2rem;
-  }
-  .cardImg {
-    width: 100%;
-    img {
-      width: 100%;
-      height: 285px;
-      border-radius: 0.6rem;
-    }
-  }
-}
 
-a {
-  text-decoration: none;
-  color: black;
-}
+
+
+
+
+
 

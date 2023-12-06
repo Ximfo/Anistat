@@ -1,25 +1,66 @@
 .des {
-  width: 1080px;
-  margin: 0 auto;
+  width:100%;
+  margin:  0 auto;
+  background: $color_primary;
+  color: $color_font;
+  overflow-y: auto;
   .carddes{
     display: flex;
+    width:60vw;
+    margin: auto;
     img {
-      width: 350px;
-      height: 500px;
+      width: auto;
+      height: 400px;
+      border: 5px solid $color_card;
+      margin: 20px auto;
     }
     .cardDetail{
       display: flex;
       flex-direction: column;
-      margin: 0 auto;
+      align-items: center;
+      margin: 0 auto 20px auto;
+      h1{
+        font-family: $font_names;
+        border: 2px solid $color_btn;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+      }
+      button{
+        background: $color_primary;
+          color: $color_btn;
+          font-size: 1.3em;
+          padding: 10px 95px;
+          margin-bottom: 10px;
+        border: 3px solid $color_btn;
+        &:hover{
+          background: $color_card;
+          cursor: pointer;
+        }
+      }
+      .animeInfo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 3px solid crimson;
+        margin: auto;
+        width: 300px;
+        line-height: 46px;
+        text-align: center;
+      }
       span{
-        font-size: 1.5rem;
-        margin-top: 5px;
+        font-family: $font_names;
+        font-size: 1.3rem;
       }
     }
   }
   p {
+    font-family: $font_names;
     font-size: 1.4rem;
-    color: black;
+    color: $color_font;
+    max-height: 30vh;
+    overflow-y: auto;
+    margin: auto 10em;
+    border: 5px solid rosybrown;
   }
 }
 

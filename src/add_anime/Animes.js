@@ -23,9 +23,11 @@ export const Animes = () => {
 
     return (
         <>
-            <input type={"text"} value={animetitle}
-                   onChange={(e)=>setanimetitle(e.target.value)}/>
-            <button onClick={fetchAnimes}>find</button>
+            <div className={"findtype"}>
+                <input type={"text"} value={animetitle} placeholder={"TYPE ANIME TO FIND"}
+                       onChange={(e)=>setanimetitle(e.target.value)}/>
+                <button onClick={fetchAnimes}>FIND</button>
+            </div>
             <div className='cards'>
                 {anime?.map(animes => (
                     <Card all={animes} key={animes.mal_id} />
