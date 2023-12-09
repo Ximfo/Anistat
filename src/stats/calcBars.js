@@ -1,13 +1,17 @@
 export function calcBars(filter) {
 
     const labels = [];
+
     for (let i = 0; i < filter.length; i++) {
         if (!labels.includes(filter[i])) {
             labels.push(filter[i])
         }
     }
-    labels.sort();
+
+    labels.sort((a,b)=>a-b);
+
     let QtyResult = [];
+
     for (let i = 0; i < labels.length; i++) {
         QtyResult[i] = [];
         for (let j = 0; j < filter.length; j++) {

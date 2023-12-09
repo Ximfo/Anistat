@@ -20,16 +20,25 @@ export const CardDetail = () => {
         fetchAnime();
     }, [id]);
 
+    const [raiting , setraiting]=useState(5)
+    console.log(raiting);
 
     return (
         <div className='des'>
             {anime.map(all => (
                 <div key={all.mal_id}>
+                    <h1>{all.title}</h1>
                     <div className='carddes'>
-                         <img src={all.images.jpg.image_url} alt='' />
+                        <img src={all.images.jpg.image_url} alt='' />
                         <div className='cardDetail'>
-                            <h1>{all.title}</h1>
-                            <button className='addbtn' onClick={()=>AddAni(all)}>ADD ANIME</button>
+                            <button className='addbtn' onClick={()=>AddAni(all,raiting)}>ADD ANIME</button>
+                            <div className={'raitingbar'}>
+                                <div className={'raitingLabel'}>
+                                    <span>0--&#62;S*IT</span><span>&#60;{raiting}&#62;</span><span>GOLD&#60;--10</span>
+                                </div>
+                                <input type={'range'} min={0} max={10} step={1} defaultValue={5}
+                                       onChange={(e)=>setraiting(e.target.value)}/>
+                            </div>
                             <div className={"animeInfo"}>
                                 <span>Genre: {all.genres[0].name}</span>
                                 <span>Type: {all.type}</span>
@@ -46,3 +55,4 @@ export const CardDetail = () => {
         </div>
     );
 };
+

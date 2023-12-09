@@ -3,6 +3,7 @@ import {Round} from "./animepie";
 import {Genres} from "./genres";
 import {Years} from "./years";
 import {Studios} from "./studios";
+import {Raitings} from "./raitings";
 
 
 const API_URL = 'http://localhost:3001/anidb';
@@ -45,8 +46,8 @@ export const TVshowsQty=TVshows.length;
 
 
 
-const movMins=movies.reduce((acc,ne)=>acc+ne);
-const TVMins=TVshows.reduce((acc,ne)=>acc+ne);
+const movMins=movies.reduce((acc,ne)=>acc+ne,0);
+const TVMins=TVshows.reduce((acc,ne)=>acc+ne,0);
 
 const fullMins=movMins+TVMins;
 
@@ -101,5 +102,6 @@ export const Stats=()=>{
             <div className="Bars genres" ><Genres/></div>
             <div className="Bars years" ><Years/></div>
             <div className="Bars studios" ><Studios/></div>
+            <div className="Bars raitings" ><Raitings/></div>
         </div>
     )}
