@@ -5,10 +5,10 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  background: $color_primary;
+  background: $background;
   overflow-y: auto;
   .statistics{
-    //see @media
+    //see @media below
     .stats{
       display: flex;
       //flex-direction: column;
