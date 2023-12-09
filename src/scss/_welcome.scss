@@ -1,18 +1,18 @@
 .hello{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
   background: black;
   width: 100%;
+  height: 100%;
   .hi{
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    margin-left:50px;
+    margin:  auto ;
+    //width: 40%;
+    font-size: calc(1vw + 1vh);
     h1,h2{
       font-family: $font_basic;
-      font-size: 7em;
       letter-spacing: 15px;
       margin:20px;
     }
@@ -25,17 +25,49 @@
     .logo{
       display: flex;
       margin:20px;
-      gap: 20px;
+      gap: 50px;
+      font-size: calc(1vw + 1vh);
       h3{
         margin: 0;
       }
     }
   }
+  #image{
+    width: 40%;
+    height:90%;
+    background-image: url("../welcome/images/welcomeimg1a.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    //position: sticky;
+    margin: auto auto 0 auto;
+  }
 }
-#image{
-  width: 700px;
-  height:100%;
-  background-image: url("../welcome/images/welcomeimg1.png");
-  background-size: cover;
+
+
+//smartphone
+@media (max-width: 520px) {
+  .hello {
+    display:flex;
+    flex-direction: column;
+    //height: 97%;
+    .hi{
+      font-size: calc(2vw + 2vh);
+      margin: 0 auto;
+      h1,h2{
+        margin: 2px;
+      }
+      .logo{
+        margin: 0;
+        font-size: calc(1vw + 1vh);
+      }
+    }
+    #image{
+      height:80vh;
+      width: 100%;
+    }
+  }
 }
+
+
 

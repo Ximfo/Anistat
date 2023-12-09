@@ -1,5 +1,6 @@
 .finder{
   width: 100%;
+  height: 100%;
   background: $color_primary;
   .findtype {
     display: flex;
@@ -37,5 +38,15 @@
       }
     }
   }
+}
 
+@media (max-width: 520px) {
+  .finder{
+    height: 88%;
+  }
+}
+@media (max-height: 360px) {
+  .finder{
+    height: 70%;
+  }
 }

@@ -1,15 +1,18 @@
 .des {
   width:100%;
+  height: 100%;
   margin:  0 auto;
   background: $color_primary;
   color: $color_font;
   overflow-y: auto;
   .carddes{
     display: flex;
-    width:60vw;
+    justify-content: center;
+    width:50%;
     margin: auto;
+    column-gap: 20px;
     img {
-      width: auto;
+      max-width: 280px;
       height: 400px;
       border: 5px solid $color_card;
       margin: 20px auto;
@@ -23,15 +26,18 @@
         font-family: $font_names;
         border: 2px solid $color_btn;
         padding: 10px 20px;
-        margin-bottom: 15px;
+        margin: 20px 0 10px 0;
+        text-align: center;
+        font-size: 1.5em;
+        height: 50px;
       }
       button{
         background: $color_primary;
-          color: $color_btn;
-          font-size: 1.3em;
-          padding: 10px 95px;
-          margin-bottom: 10px;
+        color: $color_btn;
+        margin-bottom: 10px;
         border: 3px solid $color_btn;
+        font-size: 1.3em;
+        padding: 10px 92px;
         &:hover{
           background: $color_card;
           cursor: pointer;
@@ -44,7 +50,7 @@
         border: 3px solid crimson;
         margin: auto;
         width: 300px;
-        line-height: 46px;
+        line-height: 43px;
         text-align: center;
       }
       span{
@@ -58,12 +64,40 @@
     font-size: 1.4rem;
     color: $color_font;
     max-height: 30vh;
+    max-width: 80vw;
     overflow-y: auto;
-    margin: auto 10em;
+    margin: auto;
     border: 5px solid rosybrown;
+    padding: 5px;
+    text-align: justify;
   }
 }
 
+
+//smartphones
+@media(max-width: 720px){
+  .des{
+    text-align: center;
+    height: 95%;
+    .carddes{
+      display: block;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      column-gap: 0;
+      img{
+        max-width: 80vw;
+        height: 250px;
+        margin:10px;
+      }
+    }
+    p{
+      max-height: 50vh;
+      font-size: 0.8em;
+      //margin-bottom: 20px;
+    }
+  }
+}
 
 
 

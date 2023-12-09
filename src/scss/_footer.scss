@@ -1,10 +1,12 @@
 footer{
-  height: 3vh;
+  height: 30px;
+  width:100%;
   background: $color_primary;
   display: flex;
   justify-content: right;
   align-items: center;
-  border-top: 4px solid $color_border;
+  border-top: 5px solid $color_border;
+  position: sticky;
   Span{
     color: $color_font;
     font-size: 0.8em;
