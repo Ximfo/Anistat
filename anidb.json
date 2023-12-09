@@ -10,6 +10,7 @@
       "studio": "Gainax",
       "year": 1995,
       "image": "https://cdn.myanimelist.net/images/anime/1314/108941.jpg",
+      "raiting": "8",
       "id": 1
     },
     {
@@ -22,6 +23,7 @@
       "studio": "Brain's Base",
       "year": 2013,
       "image": "https://cdn.myanimelist.net/images/anime/1786/120117.jpg",
+      "raiting": "9",
       "id": 2
     },
     {
@@ -34,6 +36,7 @@
       "studio": "feel.",
       "year": 2010,
       "image": "https://cdn.myanimelist.net/images/anime/1660/121553.jpg",
+      "raiting": "3",
       "id": 3
     },
     {
@@ -46,19 +49,8 @@
       "studio": "A.C.G.T.",
       "year": 2004,
       "image": "https://cdn.myanimelist.net/images/anime/9/10521.jpg",
+      "raiting": "10",
       "id": 4
-    },
-    {
-      "mal_id": 24,
-      "title": "School Rumble",
-      "genre": "Comedy",
-      "type": "TV",
-      "episodes": 26,
-      "duration": "23 min per ep",
-      "studio": "Studio Comet",
-      "year": 2004,
-      "image": "https://cdn.myanimelist.net/images/anime/4/75488.jpg",
-      "id": 5
     },
     {
       "mal_id": 50265,
@@ -70,31 +62,21 @@
       "studio": "Wit Studio",
       "year": 2022,
       "image": "https://cdn.myanimelist.net/images/anime/1441/122795.jpg",
+      "raiting": "2",
+      "id": 5
+    },
+    {
+      "mal_id": 531,
+      "title": "Bishoujo Senshi Sailor Moon R: The Movie",
+      "genre": "Drama",
+      "type": "Movie",
+      "episodes": 1,
+      "duration": "1 hr 1 min",
+      "studio": "Toei Animation",
+      "year": 1993,
+      "image": "https://cdn.myanimelist.net/images/anime/12/18897.jpg",
+      "raiting": 5,
       "id": 6
-    },
-    {
-      "mal_id": 1,
-      "title": "Cowboy Bebop",
-      "genre": "Action",
-      "type": "TV",
-      "episodes": 26,
-      "duration": "24 min per ep",
-      "studio": "Sunrise",
-      "year": 1998,
-      "image": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
-      "id": 7
-    },
-    {
-      "mal_id": 6,
-      "title": "Trigun",
-      "genre": "Action",
-      "type": "TV",
-      "episodes": 26,
-      "duration": "24 min per ep",
-      "studio": "Madhouse",
-      "year": 1998,
-      "image": "https://cdn.myanimelist.net/images/anime/7/20310.jpg",
-      "id": 8
     },
     {
       "mal_id": 2013,
@@ -106,31 +88,8 @@
       "studio": "Studio Deen",
       "year": 1999,
       "image": "https://cdn.myanimelist.net/images/anime/1921/92313.jpg",
-      "id": 9
-    },
-    {
-      "mal_id": 17437,
-      "title": "The iDOLM@STER Movie: Kagayaki no Mukougawa e!",
-      "genre": "Comedy",
-      "type": "Movie",
-      "episodes": 1,
-      "duration": "2 hr 1 min",
-      "studio": "A-1 Pictures",
-      "year": 2014,
-      "image": "https://cdn.myanimelist.net/images/anime/2/71801.jpg",
-      "id": 10
-    },
-    {
-      "mal_id": 50515,
-      "title": "Artiswitch Picture Drama",
-      "genre": "Slice of Life",
-      "type": "ONA",
-      "episodes": 5,
-      "duration": "5 min per ep",
-      "studio": "Sunrise",
-      "year": 2021,
-      "image": "https://cdn.myanimelist.net/images/anime/1457/119884.jpg",
-      "id": 11
+      "raiting": 5,
+      "id": 7
     },
     {
       "mal_id": 1361,
@@ -142,7 +101,8 @@
       "studio": "Square Pictures",
       "year": 2001,
       "image": "https://cdn.myanimelist.net/images/anime/9/51625.jpg",
-      "id": 12
+      "raiting": "9",
+      "id": 8
     },
     {
       "mal_id": 424,
@@ -154,7 +114,34 @@
       "studio": "Sunrise",
       "year": 1985,
       "image": "https://cdn.myanimelist.net/images/anime/2/20673.jpg",
-      "id": 13
+      "raiting": "2",
+      "id": 9
+    },
+    {
+      "mal_id": 1,
+      "title": "Cowboy Bebop",
+      "genre": "Action",
+      "type": "TV",
+      "episodes": 26,
+      "duration": "24 min per ep",
+      "studio": "Sunrise",
+      "year": 1998,
+      "image": "https://cdn.myanimelist.net/images/anime/4/19644.jpg",
+      "raiting": "0",
+      "id": 10
+    },
+    {
+      "mal_id": 1535,
+      "title": "Death Note",
+      "genre": "Supernatural",
+      "type": "TV",
+      "episodes": 37,
+      "duration": "23 min per ep",
+      "studio": "Madhouse",
+      "year": 2006,
+      "image": "https://cdn.myanimelist.net/images/anime/1079/138100.jpg",
+      "raiting": "10",
+      "id": 11
     }
   ]
 }

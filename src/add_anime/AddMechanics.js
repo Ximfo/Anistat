@@ -1,6 +1,6 @@
 
 
-export const AddAni=async(all)=>{
+export const AddAni=async(all, raiting)=>{
 
     const API_URL = 'http://localhost:3001/anidb';
 
@@ -14,6 +14,7 @@ export const AddAni=async(all)=>{
         studio: all.studios[0].name,
         year: all.aired.prop.from.year,
         image: all.images.jpg.image_url,
+        raiting: raiting,
     };
     console.log(aniData)
 
