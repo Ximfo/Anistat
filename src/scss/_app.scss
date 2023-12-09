@@ -2,16 +2,24 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background: $color_primary;
+  overflow-y: hidden;
 }
 
 .components{
   display: flex;
-  height: 82vh;
+  height: calc(100vh - 130px);
   border-right: 5px solid $color_border;
 }
 
+//smartphone
+@media (max-width: 520px) {
+  .components{
+    display: block;
+    border-right: none;
 
-
+  }
+}
 
 
 

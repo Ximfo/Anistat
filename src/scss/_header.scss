@@ -4,12 +4,14 @@ header{
   align-items: center;
   background: $color_primary;
   border-bottom:  5px solid $color_border;
-  height: 14vh;
+  height: 90px;
+  width: 100%;
   #header_img{
     background-image: url("../welcome/images/headerimg.png");
-    height: 14vh;
-    width: 150px;
+    height: 90px;
+    width: 120px;
     background-size: cover;
+    background-repeat: no-repeat;
     margin-right: -20px;
   }
 }
@@ -27,4 +29,11 @@ header{
   font-weight: bold;
   letter-spacing: 6px;
   transform: skew(25deg, 0deg);
+}
+
+//smartphone
+@media (max-width: 520px) {
+  .ani, .stat {
+    font-size: calc(5vw + 5vh);
+  }
 }

@@ -143,6 +143,18 @@
       "year": 2001,
       "image": "https://cdn.myanimelist.net/images/anime/9/51625.jpg",
       "id": 12
+    },
+    {
+      "mal_id": 424,
+      "title": "Dirty Pair",
+      "genre": "Adventure",
+      "type": "TV",
+      "episodes": 24,
+      "duration": "24 min per ep",
+      "studio": "Sunrise",
+      "year": 1985,
+      "image": "https://cdn.myanimelist.net/images/anime/2/20673.jpg",
+      "id": 13
     }
   ]
 }

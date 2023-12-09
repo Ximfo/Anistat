@@ -1,18 +1,19 @@
 .cards {
   background: $color_primary;
-  width: auto;
-  height: 70vh;
+  width: 100%;
+  height: 80%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 180px);
   gap: 0.8em;
-  margin: 0 auto;
+  margin: 0 auto ;
   justify-content: center;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 .card h1 {
   text-align: center;
   font-family: $font_names;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 a {
   text-decoration: none;
@@ -28,3 +29,4 @@ a {
     //border-radius: 0.5rem;
   }
 }
+

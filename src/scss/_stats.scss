@@ -4,16 +4,14 @@
   align-items: center;
   margin: 0 auto;
   width: 100%;
+  height: 100%;
   background: $color_primary;
   overflow-y: auto;
   .statistics{
-    display: flex;
-    justify-content: space-around;
-    width: 60vw;
-    margin-bottom: 30px;
+    //see @media
     .stats{
       display: flex;
-      flex-direction: column;
+      //flex-direction: column;
       align-items: center;
       justify-content: center;
       .animestat,.moviestat,.TVstat{
@@ -65,11 +63,12 @@
   }
   .Pie{
     height: 80vh;
-    margin:10px 20px auto;
+    width: auto;
+    margin:auto;
   }
   .Bars{
-    height: 80vh;
-    width: 65vw;
+    height: 100%;
+    width:90%;
     margin: 20px auto;
     background: lightgray;
   }
@@ -83,3 +82,67 @@
     border: 5px solid mediumslateblue;
   }
 }
+
+
+@media (min-width: 1001px ) {
+  .statistics{
+  display: flex;
+  justify-content: space-around;
+  width: 60vw;
+  margin-bottom: 30px;
+    .stats{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+  .statistics{
+    display: flex;
+    flex-direction: column;
+    .stats{
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+}
+
+@media (max-width: 720px) {
+  .statistics{
+    display: flex;
+    flex-direction: column;
+    .stats{
+      display: flex;
+      flex-direction: column;
+    }
+    .Pie{
+      height: auto;
+      width: 70vw;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .main_stats{
+    height: 95%;
+  }
+}
+
+@media (min-width: 1001px ) and (max-height: 600px) {
+  .statistics{
+    .stats{
+      .animestat,.moviestat,.TVstat{
+        font-size: 0.5em;
+        span{
+          font-size: 1.1em;
+        }
+      }
+    }
+    .Pie{
+      height: 70vh;
+    }
+  }
+}
+

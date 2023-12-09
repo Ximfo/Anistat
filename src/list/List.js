@@ -37,7 +37,7 @@ export const List =()=> {
                     Animedatabase.map(element=>{return (<li className={'li_img'} key={element.mal_id} ><img src={element.image} alt={''}/></li>)})
                 }</td>
                 <td>{
-                    Animedatabase.map(element=>{return (<li key={element.mal_id} className={'aniTitle'}>{element.title}</li>)})
+                    Animedatabase.map(element=>{return (<li className={'aniTitle'} key={element.mal_id} >{element.title}</li>)})
                 }</td>
                 <td>{
                     Animedatabase.map(element=>{return (<li key={element.mal_id} >{element.genre}</li>)})

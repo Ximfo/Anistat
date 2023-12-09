@@ -29,7 +29,7 @@ export const AddAni=async(all)=>{
             });
 
         if (Anidatabase.includes(aniData.mal_id)) {
-            alert("This anime is alredy added in database.");
+            alert("This anime is already added in database.");
             return;
         }
 

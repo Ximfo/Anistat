@@ -1,11 +1,7 @@
 .navbar {
   font-size: 1.4em;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
   background: $color_primary;
-  min-width: 7vw;
+  width: 100px;
   border-right: 5px solid $color_border;
   a {
     text-decoration: none;
@@ -23,3 +19,19 @@
     }
   }
 }
+
+//smartphone
+@media (max-width: 520px) {
+  .navbar{
+    display:flex;
+    width: 100vw;
+    height:40px;
+    border-right: none;
+    border-bottom: 5px solid $color_border;
+    a{
+      height: 40px;
+    }
+  }
+}
+
+
